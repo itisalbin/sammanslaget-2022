@@ -1,0 +1,58 @@
+@font-face {
+  font-family: "Minimal";
+  src: URL("/Minimal.ttf") format("truetype");
+}
+
+:root {
+  --blackish-color: #140b1c;
+  --dark-blue-color: #264f65;
+  --green-color: #2a9d7c;
+  --turquoise-color: #3bc9b1;
+  --red-color: #d77c60;
+  --whiteish-color: #eaf1c2;
+}
+
+body {
+  margin: auto;
+  font-family: "Minimal";
+  background-color: var(--turquoise-color);
+  color: var(--whiteish-color);
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.info-box-container {
+  display: grid;
+  grid-template-columns: 300px 300px 300px;
+  justify-content: center;
+  gap: 6px;
+}
+
+.info-box {
+  height: 400px;
+  background-color: var(--red-color);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media screen and (max-width: 912px) {
+  .info-box-container {
+    display: grid;
+    grid-template-columns: 300px 300px;
+    gap: 6px;
+  }
+}
+
+@media screen and (max-width: 612px) {
+  .info-box-container {
+    display: grid;
+    grid-template-columns: 300px;
+    gap: 6px;
+  }
+}
