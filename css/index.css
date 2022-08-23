@@ -1,4 +1,13 @@
 body {
   margin: auto;
-  width: 800px;
+}
+
+canvas {
+  display: block;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
