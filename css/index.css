@@ -19,6 +19,7 @@
 
 body {
   margin: auto;
+  background-color: #222;
 }
 
 h1 {
@@ -28,6 +29,7 @@ h1 {
 
 canvas {
   display: block;
+  border-radius: 24px;
 }
 
 main {
@@ -70,4 +72,11 @@ main {
 #copy-info-text {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 16px;
+}
+
+#fast-fashion-logo {
+  width: 300px;
+  height: 140px;
+  image-rendering: crisp-edges;
+  transform: scale(0.8);
 }

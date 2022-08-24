@@ -13,7 +13,7 @@ nav button {
   width: 120px;
   height: 45px;
   border: none;
-  background-color: white;
+  background-color: rgb(64, 249, 255);
   border-radius: 100px;
   box-shadow: 0 5px 2px rgb(1, 1, 0, 0.12);
   transition: all 0.2s;
@@ -27,7 +27,7 @@ nav button {
 nav button:hover {
   box-shadow: 0 2px 2px rgb(1, 1, 0, 0.12);
   transition: all 0.2s;
-  background-color: white;
+  background-color: rgb(64, 249, 255);
 }
 
 @media screen and (max-width: 920px) {
