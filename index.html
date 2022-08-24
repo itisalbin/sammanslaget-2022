@@ -12,7 +12,9 @@
     <title>Theory of change</title>
   </head>
   <body>
-    <nav><a href="about.html">About</a></nav>
+    <nav>
+      <button onclick="window.location.href = 'about.html';">About</button>
+      </nav>
     <main>
       <h1>SALE RUNNER</h1>
       <div id="unity-container" class="unity-desktop">
@@ -25,20 +27,31 @@
         </div>
         <div id="unity-warning"></div>
         <div id="unity-footer">
-          <div id="unity-webgl-logo"></div>
           <div id="unity-fullscreen-button"></div>
-          <div id="unity-build-title">Sammanslaget</div>
         </div>
       </div>
-      <a
-        href="fb-messenger://share/?link= https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fsharing%2Freference%2Fsend-dialog&app_id=123456789"
-        >Send In Messenger</a
-      >
-    </main>
-    <script>
-      window.open("fb-messenger://share?link=" + encodeURIComponent(link) + "&app_id=" + encodeURIComponent(app_id));
-    </script>
+
+      <Button id="copy-button"><p>Share</p><img src="share-icon.svg" alt=""></Button>
+      <p id="copy-info-text"></p>
+
     <script src="js/main.js"></script>
     <script src="js/canvasscale.js"></script>
+    <script>
+
+      function copyLink(){
+        navigator.clipboard.writeText("https://theoryofchange.netlify.app");
+      }
+
+      const copyButton = document.getElementById('copy-button');
+      const copyInfoText = document.getElementById('copy-info-text');
+      copyButton.addEventListener("click", ()=>{
+        copyLink();
+        copyInfoText.textContent = 'Link was copied to clipboard';
+        setTimeout(()=>{
+          copyInfoText.textContent = '';
+        }, 2000)
+      });
+
+    </script>
   </body>
 </html>

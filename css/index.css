@@ -1,5 +1,29 @@
+@font-face {
+  font-family: "Minimal";
+  src: URL("/Minimal.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Edo";
+  src: URL("/edosz.ttf") format("truetype");
+}
+
+:root {
+  --blackish-color: #140b1c;
+  --dark-blue-color: #264f65;
+  --green-color: #2a9d7c;
+  --turquoise-color: #3bc9b1;
+  --red-color: #d77c60;
+  --whiteish-color: #eaf1c2;
+}
+
 body {
   margin: auto;
+}
+
+h1 {
+  font-family: "Edo";
+  font-size: 48px;
 }
 
 canvas {
@@ -10,4 +34,40 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+#copy-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 120px;
+  height: 45px;
+  border: none;
+  background-color: var(--turquoise-color);
+  border-radius: 100px;
+  box-shadow: 0 5px 2px rgb(1, 1, 0, 0.12);
+  transition: all 0.2s;
+}
+
+#copy-button:hover {
+  box-shadow: 0 2px 2px rgb(1, 1, 0, 0.12);
+  transition: all 0.2s;
+  background-color: #68d1b3;
+}
+
+#copy-button p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  color: white;
+}
+
+#copy-button img {
+  width: 20px;
+  height: 20px;
+  margin-left: 12px;
+}
+
+#copy-info-text {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
 }
