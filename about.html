@@ -6,12 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/about.css" />
     <link rel="stylesheet" href="css/nav.css" />
+    <link rel="stylesheet" href="css/linkcard.css" />
     <link rel="stylesheet" href="css/footer.css" />
     <title>Om oss</title>
   </head>
   <body>
     <nav>
-      <button onclick="window.location.href = 'index.html';">Home</button>
+      <button onclick="window.location.href = 'index.html';">Hem</button>
+      <button onclick="window.location.href = 'about.html';" class="highlight">Om oss</button>
     </nav>
 
     <div class="hero-bg">
@@ -21,11 +23,12 @@
         Vi är ett gäng studenter på Yrgo som har varit med i ett samarbete mellan klasserna som kallas för Sammanslaget.
         Här har vi under en veckas tid fått känna på vår egna yrkesgrupp och samtidigt fått uppfattning om relationen
         till andra yrkesgrupper. Kund för sammanslaget har varit företaget Björk och frihet med temat Theory of
-        change.<br />
+        change.<br /><br />
         Uppgiften handlade om att göra en interaktiv upplevelse, vi valde att gestalta detta genom ett spel. Spelaren
         kommer instinktivt under spelets gång att vilja plocka på sig kläder för att sedan mötas av en mörk sanning i
-        slutet om riskerna med Fast Fashion.<br />Theory of change - förändringen handlar om spelarens förändring i
-        tankemönster kring köpet av kläder. Förändringen kan även bli i spelarens spelsätt om hen väljer att spela igen.
+        slutet om riskerna med Fast Fashion.<br /><br />Theory of change - förändringen handlar om spelarens förändring
+        i tankemönster kring köpet av kläder. Förändringen kan även bli i spelarens spelsätt om hen väljer att spela
+        igen.
       </p>
     </div>
     <!-- Wrapper is to set main to text-align center, because it's an inline-block, margins: auto won't work. -->
@@ -35,7 +38,10 @@
 
         <div class="info-box-container">
           <div class="info-box">
-            <h2 class="names">Albin</h2>
+            <div class="pic-row">
+              <img src="/AlbinPic.png" alt="" />
+              <h2 class="names">Albin</h2>
+            </div>
             <div class="info-text">
               <h3>Webbutveckling</h3>
               <p>
@@ -50,7 +56,10 @@
             </div>
           </div>
           <div class="info-box">
-            <h2 class="names">Annika</h2>
+            <div class="pic-row">
+              <img src="/AnnikaPic.png" alt="" />
+              <h2 class="names">Annika</h2>
+            </div>
             <div class="info-text">
               <h3>Game Artist</h3>
               <p>
@@ -65,7 +74,10 @@
             </div>
           </div>
           <div class="info-box">
-            <h2 class="names">Daniel</h2>
+            <div class="pic-row">
+              <img src="/DanielPic.png" alt="" />
+              <h2 class="names">Daniel</h2>
+            </div>
             <div class="info-text">
               <h3>Game Programming</h3>
               <p>
@@ -80,7 +92,10 @@
             </div>
           </div>
           <div class="info-box">
-            <h2 class="names">Edvin</h2>
+            <div class="pic-row">
+              <img src="/EdvinPic.png" alt="" />
+              <h2 class="names">Edvin</h2>
+            </div>
             <div class="info-text">
               <h3>Game Artist</h3>
               <p>
@@ -95,7 +110,10 @@
             </div>
           </div>
           <div class="info-box">
-            <h2 class="names">Elvira</h2>
+            <div class="pic-row">
+              <img src="/ElviraPic.png" alt="" />
+              <h2 class="names">Elvira</h2>
+            </div>
             <div class="info-text">
               <h3>UX-Designer</h3>
               <p>
@@ -110,7 +128,10 @@
             </div>
           </div>
           <div class="info-box">
-            <h2 class="names">Kamran</h2>
+            <div class="pic-row">
+              <img src="/KamranPic.png" alt="" />
+              <h2 class="names">Kamran</h2>
+            </div>
             <div class="info-text">
               <h3>UX-Designer</h3>
               <p>
@@ -126,6 +147,31 @@
           </div>
         </div>
       </main>
+      <div class="link-area">
+        <h2>Källor & Länkar</h2>
+        <div class="link-card-container" id="bjork-card">
+          <button onclick="window.location.href = 'https://bjorkafrihet.se/';" class="link-card">
+            <div class="hero-img-container"><img src="/bjorkkids.webp" alt="" class="hero-img" /></div>
+            <div class="link-container">
+              <img src="/link.svg" alt="" class="link-img" />
+              <p>www.bjorkafrihet.se</p>
+            </div>
+            <img src="/Bjorkfrihet.png" alt="" class="bjork-logo" />
+          </button>
+          <button
+            class="link-card"
+            id="fast-fashion-card"
+            onclick="window.location.href = 'https://earth.org/fast-fashions-detrimental-effect-on-the-environment/';"
+          >
+            <div class="hero-img-container"><img src="/clothes.jpeg" alt="" class="hero-img" /></div>
+            <div class="link-container">
+              <img src="/link.svg" alt="" class="link-img" />
+              <p>earth.org</p>
+            </div>
+            <h3>Fast Fashion: Its effect on the Enviroment</h3>
+          </button>
+        </div>
+      </div>
     </div>
     <!-- <footer></footer> -->
   </body>
