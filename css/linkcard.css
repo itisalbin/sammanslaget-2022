@@ -19,6 +19,7 @@
 
 .link-card:hover {
   filter: brightness(110%);
+  transition: all 0.2s;
 }
 
 .link-img {
